@@ -1,0 +1,259 @@
+:root {
+    --primary: #000000;
+    --secondary: #D2C8C8;
+    --tertiary: #1A1411;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-family: "TT Travels", sans-serif;
+}
+
+body {
+    padding: 0;
+    min-height: 900px;
+    max-width: 1400px;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+h1 {
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.main-title {
+    font-size: 2rem;
+    border-bottom: 2px solid #CEBAAA;
+    text-align: center;
+    padding: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+
+ul  {
+    list-style-type: none;
+}
+
+p {
+    font-size: 150%;
+    max-width: 500px;
+    font-weight: 50;
+}
+
+/*Шапка сайта*/
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--tertiary);
+}
+
+.logo  {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+}
+
+.nav {
+    font-size: 130%;
+    font-weight: 700;
+}
+
+.nav:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+/*Секция "Герой"*/
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/bghero.png");
+    background-size: 100% 100%;
+    height: 900px;
+}
+
+.hero-p {
+    text-align: center;
+}
+
+/*кнопка "Перейти к меню"*/
+.hero-btn {
+    font-family: "TT Travels SemiBold", sans-serif;
+    font-weight: bold;
+    background-color: #CEBAAA;
+    color: var(--tertiary);
+    border: var(--tertiary);
+    border-radius: 32px;
+    margin: 50px;
+    padding: 13px;
+    width: 160px;
+    text-align: center;
+}
+
+.hero-btn:hover {
+    background-color: var(--tertiary);
+    color: #CEBAAA;
+    transform: scale(110%);
+    transition: 0.7s ease-in-out;
+}
+
+/*Секция "О нас"*/
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    padding: 2rem;
+
+}
+
+.about-p {
+    font-size: 180%;
+}
+
+.about-img {
+    width: 550px;
+}
+
+/*Секция "Меню"*/
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-img {
+    width: 300px;
+    border-radius: 31px;
+}
+
+.category-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.menu-item {
+    border: 2px solid #CEBAAA;
+    border-radius: 31px;
+    padding: 20px;
+    margin: 25px;
+}
+
+.menu-item:hover {
+    transform: scale(1.03);
+    transition: transform 0.5s ease-in-out;
+
+}
+/*кнопка "Показать еще"*/
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-btn {
+    font-weight: bold;
+    color: #CEBAAA;
+    border: 2px solid #CEBAAA;
+    border-radius: 32px;
+    margin: 50px;
+    padding: 13px;
+    width: 160px;
+    text-align: center;
+}
+
+.menu-btn:hover {
+    background-color: #CEBAAA;
+    color: var(--tertiary);
+    transform: scale(110%);
+    transition: 0.7s ease-in-out;
+
+}
+
+/*Секция "Атмосфера"*/
+.atmosphere-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.atm-img {
+    height: 900px;
+    padding: 30px;
+}
+
+.atm-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.atm-item {
+    height: 320px;
+    text-align: center;
+}
+
+.atmitem-img {
+    width: 90px;
+}
+
+/*Секция "Инфо"*/
+.info-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("images/foot-img.png");
+    background-size: 100% 100%;
+    height: 600px;
+}
+
+/*Подвал*/
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--tertiary);
+}
+
+.network-img {
+    display: flex;
+    align-items: end;
+    gap: 15px;
+}
+
+/*МЕНЮ*/
+.tab-radio {
+    appearance: none;
+}
+
+.tab-btn {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tab-btn:hover {
+    color: #8c7c6f;
+    transition: 0.4s ease-in-out;
+}
